@@ -1,21 +1,18 @@
-# Template Puppet Module for Boxen
+# OmniFocus
 
-An example of how we write Puppet modules for Boxen. Replace this
-paragraph with a short explanation of what the heck makes your module
-useful.
+[OmniFocus](https://www.omnigroup.com/products/omnifocus/) is a personal task manager by The Omni Group for Mac OS X and
+iOS. The declared goal of the program is to be able to capture thoughts
+and ideas into to do lists.
 
 ## Usage
 
 ```puppet
-boxen::example { 'best example ever':
-  salutation => 'fam'
-}
+include omnifocus
 ```
 
 ## Required Puppet Modules
 
 * `boxen`
-* `anything-else`
 
 ## Development
 
