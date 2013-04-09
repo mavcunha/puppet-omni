@@ -1,5 +1,10 @@
+# Public: Install OmniFocus to /Applications.
+#
+# Examples
+#
+#   include omnifocus
 class omnifocus {
-  package { 'omnifocus':
+  package { 'OmniFocus':
     provider => 'appdmg',
     source   => 'http://www.omnigroup.com/ftp1/pub/software/MacOSX/10.6/OmniFocus-1.10.4.dmg'
   }
