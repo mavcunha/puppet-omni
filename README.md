@@ -1,15 +1,13 @@
-# OmniFocus
+# Omni
 
-[![Build Status](https://travis-ci.org/boxen/puppet-omnifocus.png?branch=master)](https://travis-ci.org/boxen/puppet-omnifocus)
-
-[OmniFocus](https://www.omnigroup.com/products/omnifocus/) is a personal task manager by The Omni Group for Mac OS X and
-iOS. The declared goal of the program is to be able to capture thoughts
-and ideas into to do lists.
+[Omni](https://www.omnigroup.com) is The Omni Group who makes a series of tools for for Mac OS X and iOS.
 
 ## Usage
 
 ```puppet
-include omnifocus
+include omni:focus
+include omni:graffle
+include omni:plan
 ```
 
 ## Required Puppet Modules
