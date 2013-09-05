@@ -6,6 +6,6 @@
 class omni::plan {
   package { 'OmniPlan':
     provider => 'appdmg',
-    source   => 'http://www.omnigroup.com/download/latest/omniplan'
+    source   => 'http://www.omnigroup.com/ftp1/pub/software/MacOSX/10.6/OmniPlan-2.2.4.dmg'
   }
 }
