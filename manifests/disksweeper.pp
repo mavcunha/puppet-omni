@@ -1,3 +1,8 @@
+# Public: Install OmniFocus to /Applications.
+#
+# Examples
+#
+#   include omni::disksweeper
 class omni::disksweeper {
   omni::package {
     'OmniDiskSweeper':

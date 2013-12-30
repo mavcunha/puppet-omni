@@ -2,8 +2,8 @@
 #
 # Examples
 #
-#   include omni::outlinerPro
-class omni::outlinerPro {
+#   include omni::outlinerpro
+class omni::outlinerpro {
   omni::package { 'OmniOutlinerPro':
     appversion => '3.10.6',
     osxversion => '10.4',
