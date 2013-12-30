@@ -2,12 +2,22 @@
 
 [Omni](https://www.omnigroup.com) is The Omni Group who makes a series of tools for for Mac OS X and iOS.
 
+## Warning
+
+*If you bought OmniGroup applications from the AppStore do not install them through `puppet` you won't have
+a license configured and the application will be on _trial_ mode.*
+
 ## Usage
 
+Choose what applications you want installed. 
+
 ```puppet
-include omni:focus
-include omni:graffle
-include omni:plan
+include omni::focus
+include omni::graffle
+include omni::plan
+include omni::graphsketcher
+include omni::outliner
+include omni::outlinerPro
 ```
 
 ## Required Puppet Modules
