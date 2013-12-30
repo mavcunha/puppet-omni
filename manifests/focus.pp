@@ -6,6 +6,6 @@
 class omni::focus {
   package { 'OmniFocus':
     provider => 'appdmg_eula',
-    source   => 'http://www.omnigroup.com/ftp1/pub/software/MacOSX/10.6/OmniFocus-1.10.4.dmg'
+    source   => 'http://downloads2.omnigroup.com/software/MacOSX/10.6/OmniFocus-1.10.6.dmg'
   }
 }
