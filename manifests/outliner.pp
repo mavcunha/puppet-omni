@@ -4,8 +4,9 @@
 #
 #   include omni::outliner
 class omni::outliner {
-  package { 'OmniOutliner':
-    provider => 'appdmg_eula',
-    source   => 'http://downloads2.omnigroup.com/software/MacOSX/10.4/OmniOutliner-3.10.6.dmg'
+  omni::package {
+    'OmniOutliner':
+      appversion => '3.10.6',
+      osxversion => '10.4',
   }
 }

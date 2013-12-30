@@ -4,8 +4,8 @@
 #
 #   include omni::graffle
 class omni::graffle {
-  package { 'OmniGraffle':
-    provider => 'appdmg_eula',
-    source   => 'http://downloads2.omnigroup.com/software/MacOSX/10.8/OmniGraffle-6.0.3.dmg'
+  omni::package { 'OmniGraffle':
+    appversion => '6.0.3',
+    osxversion => '10.8',
   }
 }
