@@ -19,6 +19,7 @@ bundle install $BUNDLE_ARGS
 ruby --version
 echo "puppet" $(bundle exec puppet --version)
 bundle exec puppet-lint --version
+echo "current path" $(pwd)
 
 bundle exec cardboard bootstrap
 exec bundle exec cardboard "$SCRIPT" "$@"
