@@ -15,5 +15,10 @@ BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
 rm -rf {$BIN,$BUNDLE/config}
 bundle install $BUNDLE_ARGS
 
+# version information
+ruby --version
+echo "puppet" $(bundle exec puppet --version)
+bundle exec puppet-lint --version
+
 bundle exec cardboard bootstrap
 exec bundle exec cardboard "$SCRIPT" "$@"
