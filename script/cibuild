@@ -15,11 +15,11 @@ BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
 rm -rf {$BIN,$BUNDLE/config}
 bundle install $BUNDLE_ARGS
 
-# version information
-ruby --version
-echo "puppet" $(bundle exec puppet --version)
-bundle exec puppet-lint --version
-echo "current path" $(pwd)
+if [[ -n ${SNAP_CI} ]]; then
+  echo 'running on SNAP-CI, creating symbolic link and changing directory'
+  ln -s . omni
+  cd omni/
+fi
 
 bundle exec cardboard bootstrap
 exec bundle exec cardboard "$SCRIPT" "$@"
