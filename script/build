@@ -1,14 +1,20 @@
 #!/usr/bin/env bash
 
 # to fix puppet-link problems with module path
+WORK_DIR='.'
 if [[ -n ${SNAP_CI} ]]; then
   echo 'running on SNAP-CI, creating symbolic link and changing directory'
   ln -s . omni
-  cd omni/
+  WORK_DIR='omni'
 fi
 
+
 # run the build
-script/cibuild
+( cd ${WORK_DIR}; script/cibuild; )
+
+CIBUILD_EXIT=$?
 
 # clean up symlink
 [[ -h 'omni' ]] && rm -r omni
+
+exit ${CIBUILD_EXIT}
