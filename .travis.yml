@@ -1,4 +1,4 @@
 ---
-script: "./script/cibuild"
+script: "./script/build"
 rvm:
   - "1.9.3"
