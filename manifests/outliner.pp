@@ -6,7 +6,7 @@
 class omni::outliner {
   omni::package {
     'OmniOutliner':
-      appversion => '3.10.6',
-      osxversion => '10.4',
+      appversion => '4.0',
+      osxversion => '10.9',
   }
 }
