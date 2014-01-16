@@ -19,7 +19,6 @@ include omni::graffle
 include omni::plan
 include omni::graphsketcher
 include omni::outliner
-include omni::outlinerPro
 include omni::disksweeper
 ```
 
