@@ -2,7 +2,7 @@
 
 [Omni](https://www.omnigroup.com) is The Omni Group who makes a series of tools for for Mac OS X and iOS.
 
-[![Build Status](https://travis-ci.org/mavcunha/puppet-omni.png)](https://travis-ci.org/mavcunha/puppet-omni)
+[![Build Status](https://snap-ci.com/NDrQZONYjd4PvyfjoBR-rLiZxbiLtE-hdN4lML95aP4/build_image)](https://snap-ci.com/projects/mavcunha/puppet-omni/build_history)
 
 ## Warning
 
