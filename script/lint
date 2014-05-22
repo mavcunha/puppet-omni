@@ -5,7 +5,7 @@ set -e
 
 cd $(dirname "$0")/..
 
-BUNDLE=.bundle
+BUNDLE=${HOME}/.bundle
 BIN=$BUNDLE/binstubs
 SCRIPT=$(basename "$0")
 
