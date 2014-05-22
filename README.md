@@ -1,4 +1,4 @@
-[![Build Status](https://snap-ci.com/NDrQZONYjd4PvyfjoBR-rLiZxbiLtE-hdN4lML95aP4/build_image)](https://snap-ci.com/projects/mavcunha/puppet-omni/build_history)
+[![Build Status](https://snap-ci.com/mavcunha/puppet-omni/branch/master/build_image)](https://snap-ci.com/mavcunha/puppet-omni/branch/master)
 
 # Omni
 
