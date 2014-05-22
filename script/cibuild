@@ -5,11 +5,11 @@ set -e
 
 cd $(dirname "$0")/..
 
-BUNDLE=${HOME}/.bundle
+BUNDLE=.bundle
 BIN=$BUNDLE/binstubs
 SCRIPT=$(basename "$0")
 
-BUNDLE_ARGS="-j 2 --binstubs $BIN --path $BUNDLE --quiet"
+BUNDLE_ARGS="--binstubs $BIN --path $BUNDLE --quiet"
 [ "cibuild" = "$SCRIPT" ] && BUNDLE_ARGS="$BUNDLE_ARGS --no-quiet"
 
 rm -rf {$BIN,$BUNDLE/config}
