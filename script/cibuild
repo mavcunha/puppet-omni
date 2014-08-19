@@ -5,7 +5,7 @@ set -e
 
 cd $(dirname "$0")/..
 
-BUNDLE=.bundle
+BUNDLE=${SNAP_CACHE_DIR:-.}/.bundle
 BIN=$BUNDLE/binstubs
 SCRIPT=$(basename "$0")
 
