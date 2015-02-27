@@ -5,7 +5,7 @@
 #   include omni::focus
 class omni::focus {
   omni::package { 'OmniFocus':
-    appversion => '2.0.2',
+    appversion => '2.0.4',
     osxversion => '10.9',
   }
 }
