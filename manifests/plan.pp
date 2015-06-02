@@ -3,9 +3,11 @@
 # Examples
 #
 #   include omni::plan
-class omni::plan {
-  omni::package { 'OmniPlan':
-    appversion => '2.3.3',
-    osxversion => '10.8',
-  }
+class omni::plan(
+    $appversion = '2.3.3',
+    $osxversion = '10.8') {
+      omni::package { 'OmniPlan':
+        appversion => $appversion,
+        osxversion => $osxversion,
+      }
 }

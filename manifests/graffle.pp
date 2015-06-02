@@ -3,9 +3,11 @@
 # Examples
 #
 #   include omni::graffle
-class omni::graffle {
+class omni::graffle(
+  $appversion = '6.2.3',
+  $osxversion = '10.10') {
   omni::package { 'OmniGraffle':
-    appversion => '6.0.4',
-    osxversion => '10.8',
+    appversion => $appversion,
+    osxversion => $osxversion,
   }
 }

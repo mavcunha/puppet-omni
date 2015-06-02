@@ -3,10 +3,12 @@
 # Examples
 #
 #   include omni::outliner
-class omni::outliner {
-  omni::package {
-    'OmniOutliner':
-      appversion => '4.1.2',
-      osxversion => '10.9',
-  }
+class omni::outliner(
+      $appversion = '4.1.2',
+      $osxversion = '10.9') {
+      omni::package {
+        'OmniOutliner':
+          appversion => $appversion,
+          osxversion => $osxversion,
+      }
 }
